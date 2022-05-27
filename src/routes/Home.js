@@ -27,6 +27,13 @@ function Home() {
         </h1>
       </header>
 
+      <section>
+        <div>
+          <p>Pick a Studio Ghibli Film you want to watch.</p>
+        </div>
+        <img src="/assets/img/banner.png" alt="banner" />
+      </section>
+
       <main>
         {loading ? (
           <div>
