@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Film from "../components/Film";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -20,6 +21,12 @@ function Home() {
 
   return (
     <div>
+      <header>
+        <h1>
+          <Link to={"/"}>Film Pick</Link>
+        </h1>
+      </header>
+
       <main>
         {loading ? (
           <div>
