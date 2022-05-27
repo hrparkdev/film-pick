@@ -49,6 +49,10 @@ function Detail() {
           </div>
         )}
       </main>
+
+      <footer>
+        <p>&copy; Film Pick 2022</p>
+      </footer>
     </div>
   );
 }

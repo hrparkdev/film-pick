@@ -54,6 +54,10 @@ function Home() {
           </section>
         )}
       </main>
+
+      <footer>
+        <p>&copy; Film Pick 2022</p>
+      </footer>
     </div>
   );
 }
