@@ -1,0 +1,73 @@
+.filmBanner {
+  margin-top: 84px;
+  width: 100%;
+  height: 660px;
+}
+
+.filmDetailContainer {
+  padding: 100px 250px;
+  display: flex;
+}
+
+.filmDetailContainer__coverImgWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.filmDetailContainer__coverImg {
+  max-width: 300px;
+  max-height: 500px;
+}
+
+.filmDetailContainer__filmDetail {
+  padding: 0 50px;
+}
+
+.filmDetailContainer__filmDetail__title {
+  font-size: 28px;
+}
+
+@media only screen and (max-width: 768px) {
+  .filmBanner {
+    height: 360px;
+  }
+
+  .filmDetailContainer {
+    padding: 50px 80px;
+    flex-direction: column;
+  }
+
+  .filmDetailContainer__coverImg {
+    max-width: 250px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .filmBanner {
+    margin-top: 68px;
+    height: 200px;
+  }
+
+  .filmDetailContainer {
+    padding: 20px 50px;
+    font-size: 12px;
+  }
+
+  .filmDetailContainer__coverImgWrapper {
+    justify-content: flex-start;
+  }
+
+  .filmDetailContainer__coverImg {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .filmDetailContainer__filmDetail {
+    padding: 0;
+  }
+
+  .filmDetailContainer__filmDetail__title {
+    font-size: 18px;
+  }
+}
