@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 import Film from "../components/Film";
 import { Link } from "react-router-dom";
+import styles from "../styles/Home.module.css";
+import loader from "../styles/components/loader.module.css";
+import header from "../styles/components/header.module.css";
+import footer from "../styles/components/footer.module.css";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -20,28 +24,28 @@ function Home() {
   }, []);
 
   return (
-    <div>
-      <header>
-        <h1>
+    <div className={styles.container}>
+      <header className={header.pageHeader}>
+        <h1 className={header.pageHeader__title}>
           <Link to={"/"}>Film Pick</Link>
         </h1>
       </header>
-
-      <section>
-        <div>
-          <p>Pick a Studio Ghibli Film you want to watch.</p>
+      
+      <section className={styles.banner}>
+        <div className={styles.banner__bannerTitleWrapper}>
+          <p className={styles.banner__bannerTitle}>Pick a Studio Ghibli Film you want to watch.</p>
         </div>
-        <img src="/assets/img/banner.png" alt="banner" />
+        <img src="/assets/img/banner.png" alt="banner" className={styles.banner__bannerImg} />
       </section>
 
       <main>
         {loading ? (
-          <div>
-            <img src="/assets/img/spinner.gif" alt="spinner" />
+          <div className={loader.pageLoader}>
+            <img src="/assets/img/spinner.gif" alt="spinner" className={loader.pageLoader__spinner} />
           </div>
         ) : (
-          <section>
-            <ul>
+          <section className={styles.filmsWrapper}>
+            <ul className={styles.films}>
               {films.map((film) => (
                 <Film
                   key={film.id}
@@ -55,7 +59,7 @@ function Home() {
         )}
       </main>
 
-      <footer>
+      <footer className={footer.pageFooter}>
         <p>&copy; Film Pick 2022</p>
       </footer>
     </div>
