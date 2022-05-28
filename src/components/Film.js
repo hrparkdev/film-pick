@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import styles from "../styles/Film.module.css"
 
 function Film({ id, coverImg, title }) {
   return (
-    <li>
+    <li className={styles.film}>
       <Link to={`/film/${id}`}>
-        <img src={coverImg} alt={title} />
-        <div>
-          <h2>{title}</h2>
+        <img src={coverImg} alt={title} className={styles.film__img} />
+        <div className={styles.film__titleWrapper}>
+          <h2 className={styles.film__title}>{title}</h2>
         </div>
       </Link>
     </li>
