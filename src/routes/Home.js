@@ -27,7 +27,7 @@ function Home() {
     <div className={styles.container}>
       <header className={header.pageHeader}>
         <h1 className={header.pageHeader__title}>
-          <Link to={"/"}>Film Pick</Link>
+          <Link to={`${process.env.PUBLIC_URL}/`}>Film Pick</Link>
         </h1>
       </header>
       
@@ -35,13 +35,21 @@ function Home() {
         <div className={styles.banner__bannerTitleWrapper}>
           <p className={styles.banner__bannerTitle}>Pick a Studio Ghibli Film you want to watch.</p>
         </div>
-        <img src="/assets/img/banner.png" alt="banner" className={styles.banner__bannerImg} />
+        <img 
+          src={`${process.env.PUBLIC_URL}/assets/img/banner.png`} 
+          alt="banner" 
+          className={styles.banner__bannerImg} 
+        />
       </section>
 
       <main>
         {loading ? (
           <div className={loader.pageLoader}>
-            <img src="/assets/img/spinner.gif" alt="spinner" className={loader.pageLoader__spinner} />
+            <img 
+              src={`${process.env.PUBLIC_URL}/assets/img/spinner.gif`} 
+              alt="spinner" 
+              className={loader.pageLoader__spinner} 
+            />
           </div>
         ) : (
           <section className={styles.filmsWrapper}>
