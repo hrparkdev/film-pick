@@ -2,6 +2,9 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import FilmDetail from "../components/FilmDetail";
+import loader from "../styles/components/loader.module.css";
+import header from "../styles/components/header.module.css";
+import footer from "../styles/components/footer.module.css";
 
 function Detail() {
   const { id } = useParams();
@@ -31,7 +34,7 @@ function Detail() {
       <main>
         {loading ? (
           <div className={loader.pageLoader}>
-            <img src="/assets/img/spinner.gif" alt="spinner" />
+            <img src="/assets/img/spinner.gif" alt="spinner" className={loader.pageLoader__spinner} />
           </div>
         ) : (
           <div>
@@ -49,8 +52,8 @@ function Detail() {
           </div>
         )}
       </main>
-
-      <footer>
+      
+      <footer className={footer.pageFooter}>
         <p>&copy; Film Pick 2022</p>
       </footer>
     </div>
