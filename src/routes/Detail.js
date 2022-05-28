@@ -27,14 +27,18 @@ function Detail() {
     <div>
       <header className={header.pageHeader}>
         <h1 className={header.pageHeader__title}>
-          <Link to={"/"}>Film Pick</Link>
+          <Link to={`${process.env.PUBLIC_URL}/`}>Film Pick</Link>
         </h1>
       </header>
 
       <main>
         {loading ? (
           <div className={loader.pageLoader}>
-            <img src="/assets/img/spinner.gif" alt="spinner" className={loader.pageLoader__spinner} />
+            <img 
+              src={`${process.env.PUBLIC_URL}/assets/img/spinner.gif`} 
+              alt="spinner" 
+              className={loader.pageLoader__spinner} 
+            />
           </div>
         ) : (
           <div>
