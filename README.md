@@ -2,8 +2,10 @@
 
 ## 🌎 Website: https://hrparkdev.github.io/film-pick/
 
-![image](https://user-images.githubusercontent.com/91646438/171308283-2d61b2c2-9d80-42c9-a811-c0f4be58b494.png)
-![image](https://user-images.githubusercontent.com/91646438/171308305-93d7ec03-c339-44f9-a097-f56d3ce052f3.png)
+![image](https://user-images.githubusercontent.com/91646438/171593109-dae4fb81-dabd-4259-a605-6fbe37285854.png)
+![image](https://user-images.githubusercontent.com/91646438/171593263-00b9b73c-e710-4c87-8859-c2128442c219.png)
+![image](https://user-images.githubusercontent.com/91646438/171593279-b406010d-6a8e-45dc-872e-af50403a6633.png)
+![image](https://user-images.githubusercontent.com/91646438/171593328-2cf685f8-24f6-44ec-81b2-091eb4327d42.png)
 
 ## 💡 Topic
 
