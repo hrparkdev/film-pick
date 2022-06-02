@@ -16,9 +16,8 @@
 }
 
 .film__img {
-  max-width: 160px;
   width: 100%;
-  height: auto;
+  min-height: 200px;
   box-shadow: 10px -10px 14px rgba(125, 125, 124, 0.289);
 }
 
