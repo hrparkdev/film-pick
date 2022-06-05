@@ -21,6 +21,11 @@
   box-shadow: 10px -10px 14px rgba(125, 125, 124, 0.289);
 }
 
+.film__img:hover {
+  transform: scale(1.1);
+  transition: .5s;
+}
+
 .film__titleWrapper {
   text-align: center;
 }
